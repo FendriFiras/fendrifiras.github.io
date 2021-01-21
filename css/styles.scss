@@ -1,0 +1,80 @@
+//palette colors
+$fisrt-color: #222831;
+$seconde-color: #393e46;
+$third-color: #00adb5;
+$fourth-color: #00fff5;
+
+
+.home-header {
+  height: 100vh;
+  background-color: $fisrt-color;
+}
+.a {
+  height: 1000px;
+  background-color: $seconde-color;
+}
+// 2 class to change links color to white
+nav .navbar-nav>li>a {
+  color: white !important;
+  &:hover{
+    color:$fourth-color !important;
+}
+}
+nav .navbar-nav.custom>li>a {
+  color:$fourth-color !important;
+  &:hover{
+    color:white !important;
+}
+}
+nav .navbar-brand {
+  color: white !important;
+  
+}
+nav .navbar-brand.custom {
+    color:$fourth-color !important;
+  }
+//2 class to define navbar backgroundcolor
+.bg {
+  transition: 750ms ease-in;
+  background-color: transparent;
+}
+.bg.scrolled {
+  background-color: $fisrt-color;
+}
+// 2 class to define links color
+.scroll-down{
+    position: fixed;
+    top: 80%;
+    left: 10px;
+    display: block;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    &:hover{
+        color:$fourth-color !important;
+    }
+}
+.scroll-down.custom{
+    display: none;
+}
+.contact{
+    width: 10px;
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation:mixed;
+    .con{
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+        &:hover{
+            color:$fourth-color !important;
+        }
+    }
+}
+.contact.custom{
+    display:none;
+}
